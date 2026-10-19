@@ -1,3 +1,4 @@
+
 # OmaTreeni
 
 **Tekijä(t):** Silja Jahnukainen
@@ -106,3 +107,6 @@ Jos käytit ChatGPT:tä, GitHub Copilotia tai muuta tekoälytyökalua, mainitse 
 Tämä projekti on lisensoitu MIT-lisenssillä.
 Lisätietoa lisenssin lisäämisestä GitHub-projektiin:
 https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository
+=======
+
+
