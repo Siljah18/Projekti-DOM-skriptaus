@@ -1,0 +1,277 @@
+
+/* Yleiset asetukset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Sivun tausta ja tekstin ulkoasu */
+body {
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    background-color: #c993e332;
+    color: rgb(5, 3, 3);
+    min-height: 100vh;
+}
+
+/* Pääotsikon väri */
+h1 {
+    color: #7e6978;
+}
+
+/* Tervetuloa-osio */
+.welcome {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* Treenitavoite */
+
+/* Tavoitekysymyksen alareuna väli */
+#tavoiteKysymys {
+    margin-bottom: 20px;
+}
+
+/* Viikkotavoitteen numerokentän tyyli */
+#tavoite {
+    width: 100px;
+    padding: 10px;
+    border: 2px solid #e04cb6;
+    border-radius: 8px;
+    font-size: 18px;
+    text-align: center;
+    color: #252832;
+    background-color: white;
+}
+
+/* Save Goal -painikkeen tyyli */
+button[onclick="tallennaTavoite()"] {
+    background: #e04cb6;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Tulososion alareuna väli */
+#tulos {
+    margin-bottom: 40px;
+    margin-top: 20px;
+    font-size: medium;
+    font-family: 'Montserrat', sans-serif;
+    background-color: transparent;
+}
+
+/* Treenilomake */
+
+/* Treenityypin alasvetovalikon ulkoasu */
+#treeniTyyppi {
+    padding: 10px;
+    border: 1px solid #c58acb;
+    border-radius: 6px;
+    background-color: white;
+    color: #252832;
+    font-family: inherit;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#treeniTyyppi {
+    width: 220px;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/* Treenilomakkeen tekstien fontti */
+#treeniLomake label {
+    font-family: Verdana, sans-serif;
+    
+}
+
+/* Treenilomakkeen yläreunan väli */
+#treeniLomake {
+    margin-top: 20px;
+}
+
+/* Treenien lisäyspainikkeen ulkoasu */
+#treeniLomake button {
+    background-color: #383e3c;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Treenilomake, laskuri ja yhteenveto */
+.workout-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1.2fr) minmax(200px, 0.8fr) minmax(280px, 1fr);
+    grid-template-areas: "content yhteenveto laskuri";
+    align-items: start;
+    gap: 20px;
+}
+
+
+/* Treenilomakkeen tila */
+.workout-content {
+    grid-area: content;
+    min-width: 0;
+}
+/* Laskurin ulkoasu */
+.laskuri {
+    grid-area: laskuri;
+    background-color: #252832;
+    color: white;
+    padding: clamp(25px, 3vw, 45px);
+    border-radius: 10px;
+    text-align: center;
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+    margin-top: 0;
+    flex-shrink: 0;
+}
+
+/* Treenien kokonaismäärän ulkoasu */
+#treeniMaara {
+    font-size: 36px;
+    color: #e04cb6;
+    font-weight: bold;
+}
+
+/* Jäljellä olevat treenit viikolta */
+.laskuri .treenitjaljella {
+    font-size: 14px;
+    color: rgb(254, 253, 253);
+}
+
+/* Treenituntien keston teksti */
+.laskuri .treenitunnit {
+    font-size: 14px;
+    color: rgb(227, 222, 159);
+}
+
+
+/* Viikkotavoitteen prosenttiympyrä */
+.tavoite-ympyra {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: conic-gradient(
+        #e04cb6 0%,
+        #454956 0%
+    );
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 25px;
+}
+
+/* Ympyrän sisäosa */
+.ympyra-sisalto {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: #252832;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Prosenttiluku */
+#tavoiteProsentti {
+    font-size: 32px;
+    font-weight: bold;
+    color: #f16bc8;
+}
+
+/* Ympyrän selitys teksti */
+.ympyra-sisalto small {
+    font-size: 11px;
+    color: white;
+}
+
+/* puhelimeen sopiva asettelu */
+@media (max-width: 700px) {
+    .workout-layout {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .workout-content,
+    .laskuri,
+    #kategoriaYhteenveto {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .laskuri {
+        margin-top: 0;
+    }
+}
+/* Näytetään virheellinen kenttä punaisella */
+.kentta-virhe {
+    border: 2px solid #e53935 !important;
+    background-color: #fff0f0 !important;
+}
+
+/* Virheilmoituksen ulkoasu */
+#virhe {
+    color: #d32f2f;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* Kategorioittainen tuntiyhteenveto */
+#kategoriaYhteenveto {
+    grid-area: yhteenveto;
+    width: 100%;
+    margin-top: 0;
+    margin-left: -10px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #e8c7e2;
+    border-radius: 10px;
+    color: #252832;
+}
+#kategoriaYhteenveto h3 {
+    margin-bottom: 15px;
+    color: #7e6978;
+}
+
+#kategoriaYhteenveto p {
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+/* Treenin poistopainike */
+.poista-treeni {
+    margin-left: 12px;
+    padding: 6px 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #d9435f;
+    color: white;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+.poista-treeni:hover {
+    background-color: #b92f49;
+}
+
+/* Yhteenvetolatikon sijainti pienemmillä näytöillä */
+@media (max-width: 1000px) {
+    #kategoriaYhteenveto {
+        margin-left: 0;
+    }
+}

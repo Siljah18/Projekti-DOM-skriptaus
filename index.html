@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OmaTreeni</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <!-- Sivun otsikko -->
+    <header>
+        <h1>Treenit</h1>
+        
+    </header>
+    <!-- Tervetuloa -->
+    <main>
+        <section class="welcome">
+            <h2>Tervetuloa!</h2>
+            <p>Tee viikottainen treenisuunnitelmasi!</p>
+
+            
+        </section>
+    </main>
+    <!-- Treenitavoite -->
+    <h2>Treenisuunnitelma</h2>
+
+    <p id="tavoiteKysymys">Kuinka monta kertaa haluat treenata viikossa?</p>
+
+    <!-- Käyttäjä syöttää tavoitteen -->
+
+    <input type="number" id="tavoite" min="1" max="20">
+
+    <button onclick="tallennaTavoite()">Tallenna tavoite</button>
+
+    <p id="tulos"></p>
+<div class="workout-layout">
+    <div class="workout-content">
+    
+        <!-- Treenilomake -->
+    
+
+
+    <h2>Kuvaile treeni</h2>
+
+<form id="treeniLomake">
+    <!-- Treenityyppi -->
+    <label for="treeniTyyppi">Treenityyppi:</label>
+
+    <select id="treeniTyyppi">
+        <option value="Kuntosali">Kuntosali</option>
+        <option value="Juoksu">Juoksu</option>
+        <option value="Kävely">Kävely</option>
+        <option value="Pyöräily">Pyöräily</option>
+        <option value="Muu">Muu</option>
+    </select>
+
+    <br><br>
+
+    <!-- Treenitunnit -->
+
+    <label for="treeniTunnit">Kesto tunteina:</label>
+
+    <input type="number" id="treeniTunnit" min="0.25" max="24" step="0.25">
+
+    <br><br>
+    <!-- Treenin kuvaus -->
+    <label for="treeniKuvaus">Kuvaus:</label>
+
+    <input type="text" id="treeniKuvaus" placeholder="E.g. leg workout">
+
+    <br><br>
+    <!-- Lisätään treeni listaan -->
+    <button type="submit">Lisää treeni</button>
+</form>
+
+<!-- Näytetään virheilmoitukset -->
+<p id="virhe"></p>
+<!-- Lisätyt treenit -->
+<ul id="treeniLista"></ul>
+
+</div>
+<!-- Yhteenveto -->
+
+<aside class="laskuri">
+
+    <!-- Viikkotavoitteen prosenttiympyrä -->
+    <div class="tavoite-ympyra">
+        <div class="ympyra-sisalto">
+            <span id="tavoiteProsentti">0%</span>
+            <small>Edistyminen</small>
+        </div>
+    </div>
+
+    <!-- treenimäärä -->
+    <h3>Treenimäärä</h3>
+    <p id="treeniMaara">0</p>
+
+    <!-- Jäljellä olevat treenit viikolta -->
+    <h3 class="treenitjaljella">Treenit jäljellä tällä viikolla</h3>
+    <p id="treenitJaljella">0</p>
+
+    <!-- Kesto yhteensä -->
+    <h3 class="treenitunnit">Treenitunnit tällä viikolla</h3>
+    <p id="treeniTunnitYhteensa">0</p>
+
+</aside>
+</div>
+<!-- JavaScript-tiedosto -->
+<script src="js/script.js"></script>
+</body>
+</html>
