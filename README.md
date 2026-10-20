@@ -11,7 +11,7 @@ Käyttäjä voi seuraa sovelluksella omia treenikertoja ja pitää yllä treenit
 
 ### Suunnitellut toiminnot
 
-Listaa vähintään kolme sovellukseesi suunniteltua toimintoa:
+Suunnitellut toiminnot:
 
 - Käyttäjä voi asettaa itselleen treenitavoitteen viikoittain
 - Käyttäjä voi kirjata uuden treenin, kuvauksen ja keston
@@ -81,8 +81,6 @@ Sovelluksen mahdollinen oleellinen puute on, että sovellus laskee kaikki käytt
 
 
 ## Oma arvio ja oppimisen reflektointi
-
-Pohdi työtäsi ja oppimisprosessiasi.
 
 Onnistuin tekemään oikeat koodit projektin toimimisen saavuttamiseksi. Haastavaa oli laskurin tekeminen ja sen toiminnan ymmärtäminen. Jos aikaa olisi enemmän, tekisin sovellukseen lisää toimintoja, jotka parantavat sitä. Lisäisin treeneille päivämäärät, jotta sovellus voi erottaa eri viikkojen treenit ja seurata oikeaa viikon edistymistä. 
 
