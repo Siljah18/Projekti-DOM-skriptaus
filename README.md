@@ -29,7 +29,7 @@ Listaa vähintään kolme sovellukseesi suunniteltua toimintoa:
 
 ## Verkkolinkit
 
-- **Julkaistu sovellus:** [Lisää tähän GitHub Pages -osoite](https://yourusername.github.io/your-repository/)
+- **Julkaistu sovellus:** [Avaa OmaTreeni](https://siljah18.github.io/Projekti-DOM-skriptaus/)
 - **GitHub-repositorio:** [Lisää tähän repositorion osoite](https://github.com/yourusername/your-repository)
 - **Projektin videoesittely:** [Lisää tähän videon osoite](https://example.com/)
 
