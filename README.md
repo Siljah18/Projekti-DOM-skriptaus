@@ -91,10 +91,6 @@ Haluaisin oppia ymmärtämään lisää erilaisia koodin käskyjä ja hahmottama
 
 ## Lähteet ja kiitokset
 
-Listaa kaikki projektissa käyttämäsi lähteet, tutoriaalit, kuvat ja koodiesimerkit.
-
-Jos käytit ChatGPT:tä, GitHub Copilotia tai muuta tekoälytyökalua, mainitse se tässä ja kerro lyhyesti, miten se tuki työskentelyäsi.
-
 - [HTML select element](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/select)
 - [Expressions and operators](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_operators)
 - Käytetty tekoälytyökalu: ChatGPT
