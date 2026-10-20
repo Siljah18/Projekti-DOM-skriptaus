@@ -30,8 +30,8 @@ Suunnitellut toiminnot:
 ## Verkkolinkit
 
 - **Julkaistu sovellus:** [Avaa OmaTreeni](https://siljah18.github.io/Projekti-DOM-skriptaus/)
-- **GitHub-repositorio:** [Lisää tähän repositorion osoite](https://github.com/yourusername/your-repository)
-- **Projektin videoesittely:** [Lisää tähän videon osoite](https://example.com/)
+- **GitHub-repositorio:** [Avaa repositorio](https://github.com/Siljah18/Projekti-DOM-skriptaus)
+- **Projektin videoesittely:** [Avaa video](https://video.laurea.fi/media/OmaTreeni/0_ta2ntugb)
 
 ## Tietoja sovelluksesta
 
